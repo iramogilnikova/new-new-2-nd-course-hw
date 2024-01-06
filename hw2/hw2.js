@@ -9,8 +9,8 @@ const iPhone = 2007;
 alert(iPhone);
 
 // Exercise 3
-const Name = 'Brendan Eich';
-alert(Name);
+const hisName = 'Brendan Eich';
+alert(hisName);
 
 
 // Exercise 4
