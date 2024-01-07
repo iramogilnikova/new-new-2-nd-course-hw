@@ -8,15 +8,15 @@ body {
 }
 
 .center {
-  padding-left: calc(50% - 580px);
-  padding-right: calc(50% - 580px);
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
 }
 
 .top {
-  width: 1440px;
   height: 1024px;
   background-image: url(img/headerpicture.jpg);
   background-position: center;
+  background-size: cover;
 }
 
 .top__heading {
@@ -68,10 +68,11 @@ body {
 }
 
 .game-box {
+  height: auto;
   background: #000915;
-  width: 1440px;
-  /*height: 556px;*/
+  background-size: cover;
   display: flex;
+  justify-content: center;
   gap: 32px;
   padding-top: 128px;
   padding-bottom: 128px;
@@ -120,12 +121,11 @@ body {
   }
   .top {
     height: 735px;
-    width: 375px;
     background-image: url(img/mobilehead.jpg);
-    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     flex-shrink: 0;
   }
   .top__heading {
@@ -155,7 +155,6 @@ body {
     margin-bottom: 239px;
   }
   .game-box-mob {
-    width: 375px;
     height: 1221px;
     flex-shrink: 0;
     background: #000915;
@@ -168,5 +167,74 @@ body {
   }
   .game-box {
     display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 834px) {
+  .center {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .top {
+    height: 735px;
+    background-image: url(img/mobilehead.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .top__heading {
+    width: 343px;
+    font-size: 32px;
+    display: flex;
+    text-align: center;
+    padding-bottom: 33px;
+  }
+  .top__text {
+    width: 343px;
+    height: 66px;
+    font-size: 14px;
+    text-align: center;
+    font-style: normal;
+    line-height: 22px;
+    padding-bottom: 33px;
+  }
+  .top__button {
+    width: 234.063px;
+    height: 48.603px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #9C0332;
+    margin-left: 54.5px;
+    margin-right: 54.5px;
+    margin-bottom: 239px;
+  }
+  .game-box {
+    display: none;
+  }
+  .game-box-mob {
+    height: auto;
+    flex-shrink: 0;
+    background: #000915;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 33px;
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+}
+@media (min-width: 835px) and (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 393px);
+    padding-right: calc(50% - 393px);
+  }
+  .game-box {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #000915;
+    background-size: contain;
   }
 }/*# sourceMappingURL=hw3.css.map */
