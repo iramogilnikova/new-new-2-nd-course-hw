@@ -237,4 +237,14 @@ body {
     background: #000915;
     background-size: contain;
   }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .center {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  .game-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }/*# sourceMappingURL=hw3.css.map */
