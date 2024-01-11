@@ -80,7 +80,7 @@ body {
 
 .container {
   position: relative;
-  width: 379px;
+  max-width: 379px;
   height: 300px;
 }
 .container:hover {
@@ -93,7 +93,7 @@ body {
 .bottomleft {
   position: relative;
   bottom: 64px;
-  left: 32px;
+  padding-left: 32px;
   font-size: 18px;
   color: #FFF;
   font-size: 24px;
@@ -247,4 +247,4 @@ body {
     display: flex;
     flex-wrap: wrap;
   }
-}/*# sourceMappingURL=hw3.css.map */
+}/*# sourceMappingURL=style.css.map */
