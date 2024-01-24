@@ -146,3 +146,19 @@ console.log(circle2.getPerimeter());
 //("Зима", "Лето", "Весна", "Осень").
 //Придумайте, как должна работать функция, если ей передать неправильный параметр.
 //Выведите пример использования функции в консоль.
+
+function getSeason(month) {
+    if (month >= 3 && month <= 5) {
+        return "Весна";
+    } else if (month >= 6 && month <= 8) {
+        return "Лето";
+    } else if (month >= 9 && month <= 11) {
+        return "Осень";
+    } else if (month === 12 || month === 1 || month === 2) {
+        return "Зима";
+    } else {
+        return "Неизвестное значение";
+    }
+}
+
+console.log(getSeason(prompt('Введите число')));
