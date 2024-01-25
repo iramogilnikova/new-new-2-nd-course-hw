@@ -24,7 +24,7 @@ console.log(getMinNumber(2, 5))
 //'Число нечетное' — если нечетное.
 
 function chekNumber(n) {
-    if (n % 2 == 0) {
+    if (n % 2 === 0) {
         return 'Число четное'
     }
     else {
@@ -59,7 +59,7 @@ function getSquare(n) {
 //Если пользователь введет число больше или равно 13, выводит на экран «Добро пожаловать!».
 
 function welcomeUser() {
-    let age = prompt('Сколько вам лет?');
+    let age = +prompt('Сколько вам лет?');
 
     if (age < 0) {
         alert('Вы ввели неправильное значение')
@@ -78,7 +78,7 @@ function welcomeUser() {
 //Если оба параметра — числа, то вернуть произведение данных чисел.
 
 function mulyiplayNumbers(a, b) {
-    if (isNaN(Number(a)) || isNaN(Number(b))) {
+    if (isNaN(a) || isNaN(b)) {
         return 'Одно или оба значения не являются числом'
     } else {
         return a * b
@@ -95,8 +95,7 @@ function mulyiplayNumbers(a, b) {
 //и выводит правильный результат с параметрами от 0 до 10 включительно.
 
 function cubeNumber() {
-    let n = prompt('Введите число');
-    n = Number(n);
+    let n = +prompt('Введите число');
 
     if (isNaN(n)) {
         return 'Переданный параметр не является числом';
@@ -115,11 +114,11 @@ console.log(cubeNumber())
 //а также getPerimeter, который возвращает периметр окружности.
 
 function getArea() {
-    return this.radius * this.radius * 3.14;
+    return this.radius * this.radius * Math.PI;
 }
 
 function getPerimeter() {
-    return this.radius * 3.14;
+    return this.radius * Math.PI;
 }
 
 const circle1 = {
@@ -147,18 +146,18 @@ console.log(circle2.getPerimeter());
 //Придумайте, как должна работать функция, если ей передать неправильный параметр.
 //Выведите пример использования функции в консоль.
 
-function getSeason(month) {
-    if (month >= 3 && month <= 5) {
-        return "Весна";
-    } else if (month >= 6 && month <= 8) {
-        return "Лето";
-    } else if (month >= 9 && month <= 11) {
-        return "Осень";
-    } else if (month === 12 || month === 1 || month === 2) {
-        return "Зима";
+function getSeason() {
+    let month = +prompt('Введите число');
+    if (month === 3 || month === 4 || month === 5) {
+        alert('Весна');
+    } else if (month === 6 || month === 7 || month === 8) {
+        alert('Лето');
+    } else if (month === 9 || month === 10 || month === 11) {
+        alert('Осень');
+    } else if (month === 1 || month === 2 || month === 12) {
+        alert('Зима');
     } else {
-        return "Неизвестное значение";
+        alert('Неизвестное значение');
     }
 }
 
-console.log(getSeason(prompt('Введите число')));
