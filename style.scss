@@ -393,6 +393,16 @@ body {
     background: #000915;
     background-size: contain;
   }
+
+  .footer {
+    height: auto;
+    flex-shrink: 0;
+    background: #000915;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
@@ -406,7 +416,18 @@ body {
     flex-wrap: wrap;
   }
 
-  @import 'mobile';
-  @import 'tablet';
+  .footer {
+    height: auto;
+    flex-shrink: 0;
+    background: #000915;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
-  /*# sourceMappingURL=style.css.map */
+@import 'mobile';
+@import 'tablet';
+
+/*# sourceMappingURL=style.css.map */
