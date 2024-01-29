@@ -118,9 +118,14 @@ body {
 }
 
 .footer {
-  height: 800px;
+  display: flex;
+  flex-direction: column;
   background: #000915;
   background-size: cover;
+}
+
+.footer__gameFirst {
+  height: 800px;
   display: flex;
 }
 
@@ -176,6 +181,34 @@ body {
   padding-bottom: 233.5px;
 }
 
+.footer__gameSecond {
+  height: 800px;
+  display: flex;
+}
+
+.footer__info2 {
+  display: flex;
+  flex-direction: column;
+  padding-left: 135px;
+}
+
+.footer__heading2 {
+  width: 396px;
+  color: #FFF;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 282px;
+  padding-bottom: 32px;
+}
+
+.footer__img2 {
+  width: 481px;
+  padding-top: 239px;
+  padding-bottom: 239px;
+}
+
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
@@ -217,7 +250,7 @@ body {
     margin-bottom: 239px;
   }
   .game-box-mob {
-    height: 1221px;
+    height: auto;
     flex-shrink: 0;
     background: #000915;
     display: flex;
@@ -231,17 +264,44 @@ body {
     display: none;
   }
   .footer {
-    flex-shrink: 0;
+    height: auto;
     background: #000915;
+    background-size: cover;
+    display: flex;
+  }
+  .footer__gameFirst {
+    height: auto;
+    flex-shrink: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .footer__gameSecond {
+    height: auto;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column-reverse;
   }
   .footer__info {
     padding: 51px 0px 64px 0px;
     align-items: center;
   }
+  .footer__info2 {
+    padding: 51px 0px 64px 0px;
+    align-items: center;
+  }
   .footer__heading {
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 0px;
+  }
+  .footer__heading2 {
     color: #FFF;
     text-align: center;
     font-size: 32px;
@@ -261,10 +321,16 @@ body {
   }
   .footer__img {
     width: 344px;
-    padding: 0px;
+    padding-top: 0px;
+    padding-bottom: 85px;
+  }
+  .footer__img2 {
+    width: 344px;
+    padding-top: 0px;
+    padding-bottom: 90px;
   }
 }
-@media (min-width: 768px) and (max-width: 834px) {
+@media (min-width: 767px) and (max-width: 834px) {
   .center {
     padding-left: 24px;
     padding-right: 24px;
@@ -321,15 +387,41 @@ body {
   .footer {
     flex-shrink: 0;
     background: #000915;
+    background-size: cover;
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+  .footer__gameFirst {
+    height: auto;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+  }
+  .footer__gameSecond {
+    height: auto;
+    flex-shrink: 0;
+    display: flex;
     align-items: center;
   }
   .footer__info {
     padding: 51px 0px 64px 0px;
     align-items: center;
   }
+  .footer__info2 {
+    padding: 51px 0px 64px 0px;
+    align-items: center;
+  }
   .footer__heading {
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 0px;
+  }
+  .footer__heading2 {
     color: #FFF;
     text-align: center;
     font-size: 32px;
@@ -349,7 +441,13 @@ body {
   }
   .footer__img {
     width: 344px;
-    padding: 0px;
+    padding-top: 0px;
+    padding-bottom: 85px;
+  }
+  .footer__img2 {
+    width: 344px;
+    padding-top: 0px;
+    padding-bottom: 90px;
   }
 }
 @media (min-width: 835px) and (max-width: 1024px) {
@@ -358,21 +456,76 @@ body {
     padding-right: calc(50% - 393px);
   }
   .game-box {
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background: #000915;
-    background-size: contain;
-  }
-  .footer {
-    height: auto;
     flex-shrink: 0;
     background: #000915;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+  }
+  .footer {
+    flex-shrink: 0;
+    background: #000915;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__gameFirst {
+    height: auto;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+  }
+  .footer__gameSecond {
+    height: auto;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+  }
+  .footer__info {
+    padding: 51px 0px 64px 0px;
+    align-items: center;
+  }
+  .footer__info2 {
+    padding: 51px 0px 64px 0px;
+    align-items: center;
+  }
+  .footer__heading {
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 0px;
+  }
+  .footer__heading2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 0px;
+  }
+  .footer__text {
+    width: 343px;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+  }
+  .footer__img {
+    width: 344px;
+    padding-top: 0px;
+    padding-bottom: 85px;
+  }
+  .footer__img2 {
+    width: 344px;
+    padding-top: 0px;
+    padding-bottom: 90px;
   }
 }
 @media (min-width: 1025px) and (max-width: 1440px) {
@@ -387,13 +540,71 @@ body {
 }
 @media (min-width: 1025px) and (max-width: 1300px) {
   .footer {
-    height: auto;
     flex-shrink: 0;
     background: #000915;
+    background-size: cover;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+  }
+  .footer__gameFirst {
+    height: auto;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 135px;
+  }
+  .footer__gameSecond {
+    height: auto;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 135px;
+  }
+  .footer__info {
+    padding: 51px 0px 64px 0px;
+    align-items: center;
+  }
+  .footer__info2 {
+    padding: 51px 0px 64px 0px;
+    align-items: center;
+  }
+  .footer__heading {
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 0px;
+  }
+  .footer__heading2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 0px;
+  }
+  .footer__text {
+    width: 343px;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+  }
+  .footer__img {
+    width: 344px;
+    padding-top: 0px;
+    padding-bottom: 85px;
+  }
+  .footer__img2 {
+    width: 344px;
+    padding-top: 0px;
+    padding-bottom: 90px;
   }
 }
 @media (max-width: 767px) {

@@ -16,3 +16,36 @@ function getSeason() {
 }
 
 // footer__button2
+
+function rememberWords() {
+    let fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    let fruit = fruits.sort(() => Math.random() - 0.5); 
+    alert(fruit.join(' '));
+    
+    let oneQuestion = prompt('Чему равнялся первый элемент массива?');
+    
+    if (oneQuestion === null) {    
+        alert ('Вы отменили ввод');
+        return;
+    }
+     
+    let twoQuestion = prompt('Чему равнялся последний элемент массива?');
+    
+    if (twoQuestion === null) {    
+      alert ('Вы отменили ввод');
+      return;
+    }
+    
+    if (!oneQuestion.trim() || !twoQuestion.trim()) {
+      alert ('Строка пустая или состоит только из пробелов');
+      return;
+    }
+    
+    if (oneQuestion === fruits[0] && twoQuestion === fruits[fruits.length - 1]) {
+        alert("Поздравляем! Вы угадали оба слова.");
+    } else if (oneQuestion === fruits[0] || twoQuestion === fruits[fruits.length - 1]) {
+        alert("Вы были близки к победе!");
+    } else {
+        alert("Вы не угадали ни одного слова.");
+    }
+  } 
