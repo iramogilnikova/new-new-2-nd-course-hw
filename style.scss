@@ -415,6 +415,9 @@ body {
     display: flex;
     flex-wrap: wrap;
   }
+}
+
+@media (min-width: 1025px) and (max-width: 1300px) {
 
   .footer {
     height: auto;
