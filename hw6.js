@@ -124,13 +124,13 @@ for (let i = 0; i < amountArr.length - 1; i++) {
 // Создайте функцию, которая принимает на вход массив целых чисел, 
 // а возвращает массив квадратов этих чисел.
 
-let result = [9, 8, 7, 6, 5];
+let getSquare = [9, 8, 7, 6, 5];
 
 function powArr(nums) {
   return nums.map(num => num ** 2); 
 }
 
-console.log(powArr(result));
+console.log(powArr(getSquare));
 
 
 // Задание 12
