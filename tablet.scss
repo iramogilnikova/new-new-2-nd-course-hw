@@ -1,4 +1,4 @@
-@media (min-width: 768px) and (max-width: 834px) {
+@media (min-width: 767px) and (max-width: 834px) {
     .center {
         padding-left: 24px;
         padding-right: 24px;
@@ -12,37 +12,35 @@
         justify-content: center;
         align-items: center;
         flex-shrink: 0;
+    }
 
-        &__heading {
-            width: 343px;
-            font-size: 32px;
-            display: flex;
-            text-align: center;
-            padding-bottom: 33px;
+    .top__heading {
+        width: 343px;
+        font-size: 32px;
+        display: flex;
+        text-align: center;
+        padding-bottom: 33px;
+    }
 
-        }
+    .top__text {
+        width: 343px;
+        height: 66px;
+        font-size: 14px;
+        text-align: center;
+        font-style: normal;
+        line-height: 22px;
+        padding-bottom: 33px;
+    }
 
-        &__text {
-            width: 343px;
-            height: 66px;
-            font-size: 14px;
-            text-align: center;
-            font-style: normal;
-            line-height: 22px;
-            padding-bottom: 33px;
-
-        }
-
-        &__button {
-            width: 234.063px;
-            height: 48.603px;
-            flex-shrink: 0;
-            border-radius: 30px;
-            background: #9C0332;
-            margin-left: calc(70.50px - 16px);
-            margin-right: calc(70.50px - 16px);
-            margin-bottom: 239px;
-        }
+    .top__button {
+        width: 234.063px;
+        height: 48.603px;
+        flex-shrink: 0;
+        border-radius: 30px;
+        background: #9C0332;
+        margin-left: 54.5px;
+        margin-right: 54.5px;
+        margin-bottom: 239px;
     }
 
     .game-box {
@@ -60,22 +58,173 @@
         padding-top: 128px;
         padding-bottom: 128px;
     }
+
+    .footer {
+        flex-shrink: 0;
+        background: #000915;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__gameFirst {
+            height: auto;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        &__gameSecond {
+            height: auto;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+
+        }
+
+        &__info {
+            padding: 51px 0px 64px 0px;
+            align-items: center;
+        }
+
+        &__info2 {
+            padding: 51px 0px 64px 0px;
+            align-items: center;
+        }
+
+        &__heading {
+            color: #FFF;
+            text-align: center;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            padding-top: 0px;
+        }
+
+        &__heading2 {
+            color: #FFF;
+            text-align: center;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            padding-top: 0px;
+        }
+
+        &__text {
+            width: 343px;
+            color: #FFF;
+            text-align: center;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 22px;
+        }
+
+        &__img {
+            width: 344px;
+            padding-top: 0px;
+            padding-bottom: 85px;
+        }
+
+        &__img2 {
+            width: 344px;
+            padding-top: 0px;
+            padding-bottom: 90px;
+        }
+    }
 }
 
-@media (min-width: 835px) and (max-width: 1024px) {
 
+@media (min-width: 835px) and (max-width: 1024px) {
     .center {
-        padding-left: calc(50% - 786px/2);
-        padding-right: calc(50% - 786px/2);
+        padding-left: calc(50% - 393px);
+        padding-right: calc(50% - 393px);
     }
 
     .game-box {
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-shrink: 0;
         background: #000915;
-        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        flex-shrink: 0;
+        background: #000915;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__gameFirst {
+            height: auto;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        &__gameSecond {
+            height: auto;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+
+        }
+
+        &__info {
+            padding: 51px 0px 64px 0px;
+            align-items: center;
+        }
+
+        &__info2 {
+            padding: 51px 0px 64px 0px;
+            align-items: center;
+        }
+
+        &__heading {
+            color: #FFF;
+            text-align: center;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            padding-top: 0px;
+        }
+
+        &__heading2 {
+            color: #FFF;
+            text-align: center;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            padding-top: 0px;
+        }
+
+        &__text {
+            width: 343px;
+            color: #FFF;
+            text-align: center;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 22px;
+        }
+
+        &__img {
+            width: 344px;
+            padding-top: 0px;
+            padding-bottom: 85px;
+        }
+
+        &__img2 {
+            width: 344px;
+            padding-top: 0px;
+            padding-bottom: 90px;
+        }
 
     }
 }
@@ -89,5 +238,87 @@
     .game-box {
         display: flex;
         flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1300px) {
+
+    .footer {
+        flex-shrink: 0;
+        background: #000915;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__gameFirst {
+            height: auto;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            gap: 135px;
+        }
+
+        &__gameSecond {
+            height: auto;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            gap: 135px;
+
+        }
+
+        &__info {
+            padding: 51px 0px 64px 0px;
+            align-items: center;
+        }
+
+        &__info2 {
+            padding: 51px 0px 64px 0px;
+            align-items: center;
+        }
+
+        &__heading {
+            color: #FFF;
+            text-align: center;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            padding-top: 0px;
+        }
+
+        &__heading2 {
+            color: #FFF;
+            text-align: center;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            padding-top: 0px;
+        }
+
+        &__text {
+            width: 343px;
+            color: #FFF;
+            text-align: center;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 22px;
+        }
+
+        &__img {
+            width: 344px;
+            padding-top: 0px;
+            padding-bottom: 85px;
+        }
+
+        &__img2 {
+            width: 344px;
+            padding-top: 0px;
+            padding-bottom: 90px;
+        }
+
     }
 }

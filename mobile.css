@@ -39,7 +39,7 @@
     margin-bottom: 239px;
   }
   .game-box-mob {
-    height: 1221px;
+    height: auto;
     flex-shrink: 0;
     background: #000915;
     display: flex;
@@ -51,5 +51,71 @@
   }
   .game-box {
     display: none;
+  }
+  .footer {
+    height: auto;
+    background: #000915;
+    background-size: cover;
+    display: flex;
+  }
+  .footer__gameFirst {
+    height: auto;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__gameSecond {
+    height: auto;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .footer__info {
+    padding: 51px 0px 64px 0px;
+    align-items: center;
+  }
+  .footer__info2 {
+    padding: 51px 0px 64px 0px;
+    align-items: center;
+  }
+  .footer__heading {
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 0px;
+  }
+  .footer__heading2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 0px;
+  }
+  .footer__text {
+    width: 343px;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+  }
+  .footer__img {
+    width: 344px;
+    padding-top: 0px;
+    padding-bottom: 85px;
+  }
+  .footer__img2 {
+    width: 344px;
+    padding-top: 0px;
+    padding-bottom: 90px;
   }
 }/*# sourceMappingURL=mobile.css.map */
