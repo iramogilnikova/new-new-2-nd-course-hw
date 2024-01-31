@@ -18,30 +18,21 @@ console.log(people);
 //Чтобы из функции map сделать filter, нужно, в зависимости от результата вызова ruleFunction,
 // принимать решение о том, добавлять в результирующий массив очередной элемент или нет.
 
-function map(arr, mapFunction) {
-    const result = [];
-    for (let i = 0; i < arr.length; i++) {
-        result.push(mapFunction(arr[i]));
-    }
-    return result;
+function isPositive(el) {
+    return el > 0;
 }
 
-function filter(arr, ruleFunction) {
-    return map(arr, function (item) {
-        if (ruleFunction(item)) {
-            return item;
-        } else {
-            return null;
+function isMale(el) {
+    return el.gender === 'male';
+}
+
+function filter(arr, callback) {
+    const result = arr.filter(el => {
+        if (callback(el)) {
+            return el
         }
-    }).filter(Boolean);
-}
-
-function isPositive(num) {
-    return num > 0;
-}
-
-function isMale(person) {
-    return person.gender === 'male';
+    })
+    return result
 }
 
 console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
@@ -60,15 +51,17 @@ console.log(filter(whoMale, isMale)); // Должен выводить [{name: '
 //Напишите программу, которая на протяжении 30 секунд каждые 3 секунды будет выводить в консоль текущую дату.
 //Последней строкой должно выводиться сообщение «30 секунд прошло».
 
-let count = 0;
-const interval = setInterval(function () {
-    console.log(new Date().toLocaleString());
-    count += 3;
-    if (count >= 30) {
-        clearInterval(interval);
+function dateOutput() {
+    const interval = setInterval(() => {
+        console.log(new Date())
+    }, 3000)
+    setTimeout(() => {
+        clearInterval(interval)
         console.log('30 секунд прошло');
-    }
-}, 3000);
+    }, 30000)
+}
+
+dateOutput()
 
 
 //Задание 4
@@ -97,14 +90,14 @@ delayForSecond(function () {
 function delayForSecond(cb) {
     setTimeout(() => {
         console.log('Прошла одна секунда');
-        if(cb) {   cb(); }
+        cb();
     }, 1000)
 }
 
-function sayHi (name) {
+function sayHi(name) {
     console.log(`Привет, ${name}!`);
 }
 
-delayForSecond(function() {
+delayForSecond(() => {
     sayHi('Глеб');
 });
